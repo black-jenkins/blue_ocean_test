@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Testing parameters') {
       steps {
-        echo 'echo ${params.release_tag}'
+        echo '${params.release_tag}'
       }
     }
   }
