@@ -4,6 +4,7 @@ pipeline {
     stage('Testing parameters') {
       steps {
         echo '${params.release_tag}'
+        sh 'echo ${params.release_tag}'
       }
     }
   }
